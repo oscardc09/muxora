@@ -2,6 +2,12 @@
 
 TUI extensible para administrar y abrir sesiones SSH desde un catálogo YAML. La primera versión usa el cliente OpenSSH del sistema, por lo que respeta `ssh-agent`, `known_hosts`, llaves y prompts de contraseña existentes.
 
+## Vista previa
+
+![Interfaz de Muxora con los paneles de grupos, hosts y detalle de la conexión](docs/muxora-preview.png)
+
+La interfaz organiza los grupos y hosts en paneles navegables, muestra los datos de la conexión seleccionada y permite administrar o iniciar sesiones SSH usando teclado o mouse.
+
 ## Documentación del proyecto
 
 - [PROJECT.md](PROJECT.md): estado actual, decisiones y próximos pasos.
