@@ -1,0 +1,28 @@
+# Compilados y artefactos de pruebas
+/bin/
+/dist/
+/coverage/
+*.out
+*.test
+coverage.txt
+coverage.html
+
+# Datos locales: pueden contener hosts, usuarios o transcripciones sensibles
+/config.yaml
+/config.local.yaml
+/logs/
+/recordings/
+/work/
+*.log
+
+# Editores y sistema operativo
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Variables locales y credenciales
+.env
+.env.*
+!.env.example

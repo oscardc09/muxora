@@ -1,0 +1,37 @@
+version: 1
+defaults:
+    port: 22
+    connect_timeout_seconds: 10
+groups:
+    - id: servidores
+      name: Servidores
+      symbol: ◈
+      color: '#38BDF8'
+    - id: laboratorio
+      name: Laboratorio
+      symbol: ⚗
+      color: '#A78BFA'
+    - id: produccion
+      name: Producción
+      symbol: ◆
+      color: '#F43F5E'
+hosts:
+    - id: production
+      name: Servidor de producción
+      address: 192.0.2.10
+      user: deploy
+      groups:
+        - servidores
+        - produccion
+      favorite: true
+    - id: raspberry
+      name: Equipo de laboratorio
+      address: 198.51.100.20
+      user: operator
+      groups:
+        - laboratorio
+settings:
+    theme: dark
+    confirm_before_exit: true
+    record_sessions: false
+    log_directory: ""
